@@ -158,7 +158,7 @@
     }
   },
   "scripts": {
-    "prepublish": "pnpm build",
+    "prepublish": "npm run build",
     "build": "pnpm build:cjs && pnpm build:esm && pnpm build:css",
     "build:cjs": "tsc --project tsconfig-cjs.json && echo '{ \"type\": \"commonjs\" }' > dist/cjs/package.json",
     "build:esm": "tsc --project tsconfig-esm.json",
